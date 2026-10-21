@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 موقع ذكاء اصطناعي مع الروابط والنبذة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+        }
+
+        h1 {
+            color: #a78bfa;
+            font-size: 2.2em;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 15px rgba(167, 139, 250, 0.4);
+        }
+
+        .subtitle {
+            color: #c4b5fd;
+            font-size: 1.05em;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.96);
+            border-radius: 20px;
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: 0 12px 45px rgba(0, 0, 0, 0.35);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 22px;
+            padding-bottom: 14px;
+            border-bottom: 3px solid #7c3aed;
+            flex-wrap: wrap;
+        }
+
+        .section-header h2 {
+            color: #1e1b4b;
+            font-size: 1.45em;
+        }
+
+        .section-icon {
+            font-size: 1.8em;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .tool-card {
+            background: #f8f7ff;
+            border-radius: 14px;
+            padding: 18px;
+            border-right: 5px solid #7c3aed;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.18);
+        }
+
+        .tool-name {
+            font-size: 1.15em;
+            font-weight: 700;
+            color: #1e1b4b;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tool-name a {
+            color: #6d28d9;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .tool-name a:hover {
+            color: #a78bfa;
+            text-decoration: underline;
+        }
+
+        .tool-desc {
+            font-size: 0.92em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .tool-link {
+            font-size: 0.85em;
+            color: #7c3aed;
+            text-decoration: none;
+            word-break: break-all;
+            display: inline-block;
+            padding: 4px 10px;
+            background: #ede9fe;
+            border-radius: 8px;
+            width: fit-content;
+            transition: background 0.2s;
+        }
+
+        .tool-link:hover {
+            background: #ddd6fe;
+            text-decoration: underline;
+        }
+
+        .tip-section {
+            background: linear-gradient(135deg, #fef3c7, #fffbeb);
+            border: 2px solid #f59e0b;
+        }
+
+        .tip-section .section-header {
+            border-bottom-color: #d97706;
+        }
+
+        .tip-section .section-header h2 {
+            color: #92400e;
+        }
+
+        .tip-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .tip-table th {
+            background: #f59e0b;
+            color: #fff;
+            padding: 12px 15px;
+            text-align: right;
+            font-size: 0.95em;
+        }
+
+        .tip-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #fde68a;
+            font-size: 0.92em;
+            color: #444;
+        }
+
+        .tip-table tr:nth-child(even) td {
+            background: #fffbeb;
+        }
+
+        .note-box {
+            background: #fef2f2;
+            border-right: 4px solid #ef4444;
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #7f1d1d;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            color: #a5b4fc;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            h1 { font-size: 1.5em; }
+            .section { padding: 18px; }
+            .section-header h2 { font-size: 1.15em; }
+            .tool-grid { grid-template-columns: 1fr; }
+            .tip-table th, .tip-table td { padding: 8px 10px; font-size: 0.82em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🤖 50 موقع ذكاء اصطناعي</h1>
+        <p class="subtitle">
+            قائمة شاملة لأدوات الذكاء الاصطناعي مع النبذة والرابط المباشر، مقسمة حسب الاستخدام:
+            الدراسة، تعلّم اللغات، البرمجة، التصميم، الفيديو، الصوت، والإنتاجية.
+        </p>
+    </header>
+
+    <!-- ============ القسم الأول: عام وبحث ============ -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-icon">💬</span>
+            <h2>أولًا: الذكاء الاصطناعي العام والبحث</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a></div>
+                <div class="tool-desc">مساعد شامل لشرح المعلومات، كتابة النصوص، تعلّم اللغات، إنشاء الأكواد وحل المشكلات.</div>
+                <a class="tool-link" href="https://chat.openai.com" target="_blank" rel="noopener">chat.openai.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.anthropic.com/claude" target="_blank" rel="noopener">Claude</a></div>
+                <div class="tool-desc">ممتاز لتحليل المستندات الطويلة، صياغة التقارير، مراجعة الأبحاث والأكواد.</div>
+                <a class="tool-link" href="https://www.anthropic.com/claude" target="_blank" rel="noopener">anthropic.com/claude</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://gemini.google.com" target="_blank" rel="noopener">Google Gemini</a></div>
+                <div class="tool-desc">للمحادثة والبحث والمساعدة في الدراسة والعمل، مع تكامل مع خدمات Google.</div>
+                <a class="tool-link" href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.perplexity.ai" target="_blank" rel="noopener">Perplexity</a></div>
+                <div class="tool-desc">محرك بحث يعتمد على الذكاء الاصطناعي ويعرض مصادر وروابط للتحقق من المعلومات.</div>
+                <a class="tool-link" href="https://www.perplexity.ai" target="_blank" rel="noopener">perplexity.ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.microsoft.com/en-us/copilot" target="_blank" rel="noopener">Microsoft Copilot</a></div>
+                <div class="tool-desc">يساعد في الكتابة، تلخيص المعلومات، البحث، وإنجاز المهام المرتبطة بأدوات Microsoft.</div>
+                <a class="tool-link" href="https://www.microsoft.com/en-us/copilot" target="_blank" rel="noopener">microsoft.com/copilot</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://deepseek.ai" target="_blank" rel="noopener">DeepSeek</a></div>
+                <div class="tool-desc">مساعد للمحادثة والتحليل والمنطق والرياضيات والبرمجة.</div>
+                <a class="tool-link" href="https://deepseek.ai" target="_blank" rel="noopener">deepseek.ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://x.com/grok" target="_blank" rel="noopener">Grok</a></div>
+                <div class="tool-desc">مساعد من xAI للمحادثة والتحليل ومتابعة بعض المعلومات والاتجاهات الحديثة.</div>
+                <a class="tool-link" href="https://x.com/grok" target="_blank" rel="noopener">x.com/grok</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://poe.com" target="_blank" rel="noopener">Poe</a></div>
+                <div class="tool-desc">منصة تجمع نماذج وروبوتات ذكاء اصطناعي متعددة في مكان واحد.</div>
+                <a class="tool-link" href="https://poe.com" target="_blank" rel="noopener">poe.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://ai.meta.com" target="_blank" rel="noopener">Meta AI</a></div>
+                <div class="tool-desc">مساعد ذكي من Meta للمحادثة والإجابة عن الأسئلة والمساعدة في بعض المهام الإبداعية.</div>
+                <a class="tool-link" href="https://ai.meta.com" target="_blank" rel="noopener">ai.meta.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://chat.qwen.ai" target="_blank" rel="noopener">Qwen Chat</a></div>
+                <div class="tool-desc">مساعد من Alibaba للمحادثة والكتابة والتحليل والبرمجة.</div>
+                <a class="tool-link" href="https://chat.qwen.ai" target="_blank" rel="noopener">chat.qwen.ai</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ القسم الثاني: دراسة ولغات ============ -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-icon">📚</span>
+            <h2>ثانيًا: الدراسة وتعلّم اللغات والبحث العلمي</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://notebooklm.google.com" target="_blank" rel="noopener">NotebookLM</a></div>
+                <div class="tool-desc">يقرأ ملفات PDF والمستندات، يلخصها ويجيب عن الأسئلة اعتمادًا على محتواها.</div>
+                <a class="tool-link" href="https://notebooklm.google.com" target="_blank" rel="noopener">notebooklm.google.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.deepl.com" target="_blank" rel="noopener">DeepL</a></div>
+                <div class="tool-desc">ترجمة النصوص والمستندات مع الاهتمام بصياغة اللغة الطبيعية، ومنها الهولندية والفرنسية.</div>
+                <a class="tool-link" href="https://www.deepl.com" target="_blank" rel="noopener">deepl.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://quillbot.com" target="_blank" rel="noopener">QuillBot</a></div>
+                <div class="tool-desc">لإعادة صياغة النصوص الإنجليزية، وتحسين الكتابة والتلخيص والتدقيق اللغوي.</div>
+                <a class="tool-link" href="https://quillbot.com" target="_blank" rel="noopener">quillbot.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.grammarly.com" target="_blank" rel="noopener">Grammarly</a></div>
+                <div class="tool-desc">يصحح الأخطاء الإنجليزية ويقترح تحسينات على الرسائل والتقارير والسيرة الذاتية.</div>
+                <a class="tool-link" href="https://www.grammarly.com" target="_blank" rel="noopener">grammarly.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://quizlet.com" target="_blank" rel="noopener">Quizlet</a></div>
+                <div class="tool-desc">لإنشاء بطاقات الكلمات، واختبار المفردات، ومراجعة المصطلحات الدراسية.</div>
+                <a class="tool-link" href="https://quizlet.com" target="_blank" rel="noopener">quizlet.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.deeplearning.ai" target="_blank" rel="noopener">DeepLearning.AI</a></div>
+                <div class="tool-desc">دورات تعليمية في الذكاء الاصطناعي وتعلّم الآلة وتطبيقاتها العملية.</div>
+                <a class="tool-link" href="https://www.deeplearning.ai" target="_blank" rel="noopener">deeplearning.ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://elicit.org" target="_blank" rel="noopener">Elicit</a></div>
+                <div class="tool-desc">بحث أدبي دلالي واستخلاص أدلة من الأوراق البحثية.</div>
+                <a class="tool-link" href="https://elicit.org" target="_blank" rel="noopener">elicit.org</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://consensus.app" target="_blank" rel="noopener">Consensus</a></div>
+                <div class="tool-desc">بحث أكاديمي قائم على الأدلة وتلخيص نتائج الأبحاث.</div>
+                <a class="tool-link" href="https://consensus.app" target="_blank" rel="noopener">consensus.app</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.semanticscholar.org" target="_blank" rel="noopener">Semantic Scholar</a></div>
+                <div class="tool-desc">بحث أكاديمي محسن ومؤشرات استشهادية لأكثر من 200 مليون ورقة.</div>
+                <a class="tool-link" href="https://www.semanticscholar.org" target="_blank" rel="noopener">semanticscholar.org</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ القسم الثالث: صور وتصميم ============ -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-icon">🎨</span>
+            <h2>ثالثًا: إنشاء الصور والتصميم</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.midjourney.com" target="_blank" rel="noopener">Midjourney</a></div>
+                <div class="tool-desc">إنشاء صور فنية وواقعية من وصف مكتوب، مع إمكانيات للتحكم في الأسلوب والتكوين.</div>
+                <a class="tool-link" href="https://www.midjourney.com" target="_blank" rel="noopener">midjourney.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://firefly.adobe.com" target="_blank" rel="noopener">Adobe Firefly</a></div>
+                <div class="tool-desc">إنشاء الصور وتعديلها وإزالة العناصر وتوليد محتوى بصري باستخدام أدوات Adobe.</div>
+                <a class="tool-link" href="https://firefly.adobe.com" target="_blank" rel="noopener">firefly.adobe.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.canva.com" target="_blank" rel="noopener">Canva</a></div>
+                <div class="tool-desc">تصميم العروض التقديمية والسير الذاتية والملصقات والمنشورات باستخدام أدوات تصميم وذكاء اصطناعي.</div>
+                <a class="tool-link" href="https://www.canva.com" target="_blank" rel="noopener">canva.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://leonardo.ai" target="_blank" rel="noopener">Leonardo AI</a></div>
+                <div class="tool-desc">إنشاء صور وتصميمات وشخصيات وأصول بصرية للألعاب والمشروعات الإبداعية.</div>
+                <a class="tool-link" href="https://leonardo.ai" target="_blank" rel="noopener">leonardo.ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://ideogram.ai" target="_blank" rel="noopener">Ideogram</a></div>
+                <div class="tool-desc">مفيد لإنشاء الصور والملصقات والتصميمات التي تتضمن كلمات مكتوبة داخل الصورة.</div>
+                <a class="tool-link" href="https://ideogram.ai" target="_blank" rel="noopener">ideogram.ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.photoroom.com" target="_blank" rel="noopener">Photoroom</a></div>
+                <div class="tool-desc">إزالة خلفية الصور، وتجهيز صور المنتجات والإعلانات والمتاجر الإلكترونية.</div>
+                <a class="tool-link" href="https://www.photoroom.com" target="_blank" rel="noopener">photoroom.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.remove.bg" target="_blank" rel="noopener">remove.bg</a></div>
+                <div class="tool-desc">إزالة خلفية الصور بسرعة، خصوصًا صور الأشخاص والمنتجات.</div>
+                <a class="tool-link" href="https://www.remove.bg" target="_blank" rel="noopener">remove.bg</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.figma.com" target="_blank" rel="noopener">Figma</a></div>
+                <div class="tool-desc">تصميم واجهات المواقع والتطبيقات والتعاون في المشاريع، مع ميزات ذكاء اصطناعي.</div>
+                <a class="tool-link" href="https://www.figma.com" target="_blank" rel="noopener">figma.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.recraft.ai" target="_blank" rel="noopener">Recraft</a></div>
+                <div class="tool-desc">أداة تصميم مع ذكاء اصطناعي، تدعم إخراج SVG متجه قابل للتعديل، مناسب للشعارات والأيقونات.</div>
+                <a class="tool-link" href="https://www.recraft.ai" target="_blank" rel="noopener">recraft.ai</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ القسم الرابع: فيديو وصوت ============ -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-icon">🎬</span>
+            <h2>رابعًا: إنشاء الفيديو والصوت والموسيقى</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://runwayml.com" target="_blank" rel="noopener">Runway</a></div>
+                <div class="tool-desc">إنشاء مقاطع فيديو وتعديلها باستخدام أوامر نصية وصور مرجعية.</div>
+                <a class="tool-link" href="https://runwayml.com" target="_blank" rel="noopener">runwayml.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://pika.art" target="_blank" rel="noopener">Pika</a></div>
+                <div class="tool-desc">إنشاء فيديوهات قصيرة ومؤثرات بصرية انطلاقًا من النصوص أو الصور.</div>
+                <a class="tool-link" href="https://pika.art" target="_blank" rel="noopener">pika.art</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.heygen.com" target="_blank" rel="noopener">HeyGen</a></div>
+                <div class="tool-desc">إنشاء فيديوهات بأفاتار يتحدث، مناسب للشروحات والعروض والتدريب.</div>
+                <a class="tool-link" href="https://www.heygen.com" target="_blank" rel="noopener">heygen.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.synthesia.io" target="_blank" rel="noopener">Synthesia</a></div>
+                <div class="tool-desc">تحويل النصوص إلى فيديوهات تعليمية وتدريبية بمقدم افتراضي.</div>
+                <a class="tool-link" href="https://www.synthesia.io" target="_blank" rel="noopener">synthesia.io</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://elevenlabs.io" target="_blank" rel="noopener">ElevenLabs</a></div>
+                <div class="tool-desc">تحويل النص إلى صوت، وإنشاء تعليقات صوتية، ودعم لغات متعددة.</div>
+                <a class="tool-link" href="https://elevenlabs.io" target="_blank" rel="noopener">elevenlabs.io</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://suno.com" target="_blank" rel="noopener">Suno</a></div>
+                <div class="tool-desc">إنشاء أغانٍ وموسيقى من وصف مكتوب، مع إمكانيات لإنشاء كلمات وألحان.</div>
+                <a class="tool-link" href="https://suno.com" target="_blank" rel="noopener">suno.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.descript.com" target="_blank" rel="noopener">Descript</a></div>
+                <div class="tool-desc">تحرير الصوت والفيديو من خلال التعامل مع النص، مع أدوات للتفريغ والتسجيل.</div>
+                <a class="tool-link" href="https://www.descript.com" target="_blank" rel="noopener">descript.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.capcut.com" target="_blank" rel="noopener">CapCut</a></div>
+                <div class="tool-desc">تحرير الفيديو وإضافة الترجمة والمؤثرات، مع أدوات ذكاء اصطناعي.</div>
+                <a class="tool-link" href="https://www.capcut.com" target="_blank" rel="noopener">capcut.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ القسم الخامس: برمجة ومواقع ============ -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-icon">💻</span>
+            <h2>خامسًا: البرمجة وإنشاء المواقع</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a></div>
+                <div class="tool-desc">محرر برمجة مدعوم بالذكاء الاصطناعي، يساعد في كتابة الكود وفهمه وتعديله.</div>
+                <a class="tool-link" href="https://cursor.sh" target="_blank" rel="noopener">cursor.sh</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot</a></div>
+                <div class="tool-desc">اقتراح الأكواد وشرحها والمساعدة في اكتشاف الأخطاء أثناء البرمجة.</div>
+                <a class="tool-link" href="https://github.com/features/copilot" target="_blank" rel="noopener">github.com/features/copilot</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://replit.com" target="_blank" rel="noopener">Replit</a></div>
+                <div class="tool-desc">كتابة وتشغيل ونشر التطبيقات من المتصفح، مع مساعدة الذكاء الاصطناعي.</div>
+                <a class="tool-link" href="https://replit.com" target="_blank" rel="noopener">replit.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://lovable.dev" target="_blank" rel="noopener">Lovable</a></div>
+                <div class="tool-desc">بناء نماذج أولية ومواقع وتطبيقات ويب من خلال وصف الفكرة بلغة عادية.</div>
+                <a class="tool-link" href="https://lovable.dev" target="_blank" rel="noopener">lovable.dev</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://bolt.new" target="_blank" rel="noopener">Bolt.new</a></div>
+                <div class="tool-desc">إنشاء تطبيقات ومواقع ويب انطلاقًا من وصف مكتوب، مع إمكانات للتشغيل والتعديل.</div>
+                <a class="tool-link" href="https://bolt.new" target="_blank" rel="noopener">bolt.new</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.wix.com" target="_blank" rel="noopener">Wix</a></div>
+                <div class="tool-desc">إنشاء مواقع إلكترونية وصفحات أعمال، مع أدوات تساعد في تصميم الموقع والمحتوى.</div>
+                <a class="tool-link" href="https://www.wix.com" target="_blank" rel="noopener">wix.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://huggingface.co" target="_blank" rel="noopener">Hugging Face</a></div>
+                <div class="tool-desc">منصة لاكتشاف نماذج الذكاء الاصطناعي وتجربتها، تشمل اللغة والصور والصوت والبرمجة.</div>
+                <a class="tool-link" href="https://huggingface.co" target="_blank" rel="noopener">huggingface.co</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://replicate.com" target="_blank" rel="noopener">Replicate</a></div>
+                <div class="tool-desc">تشغيل نماذج ذكاء اصطناعي مختلفة عبر الويب وواجهات البرمجة، للمطورين والمشروعات.</div>
+                <a class="tool-link" href="https://replicate.com" target="_blank" rel="noopener">replicate.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ القسم السادس: إنتاجية وعروض ============ -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-icon">📊</span>
+            <h2>سادسًا: الإنتاجية والعروض التقديمية والعمل</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://gamma.app" target="_blank" rel="noopener">Gamma</a></div>
+                <div class="tool-desc">إنشاء عروض تقديمية ومستندات وصفحات مرئية من خلال وصف الموضوع.</div>
+                <a class="tool-link" href="https://gamma.app" target="_blank" rel="noopener">gamma.app</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.napkin.ai" target="_blank" rel="noopener">Napkin AI</a></div>
+                <div class="tool-desc">تحويل الأفكار والنصوص إلى رسومات توضيحية ومخططات تصلح للتقارير والعروض.</div>
+                <a class="tool-link" href="https://www.napkin.ai" target="_blank" rel="noopener">napkin.ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.notion.so/product/ai" target="_blank" rel="noopener">Notion AI</a></div>
+                <div class="tool-desc">المساعدة في كتابة الملاحظات وتلخيص المستندات وتنظيم المعرفة ومهام العمل.</div>
+                <a class="tool-link" href="https://www.notion.so/product/ai" target="_blank" rel="noopener">notion.so/product/ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://zapier.com" target="_blank" rel="noopener">Zapier</a></div>
+                <div class="tool-desc">ربط التطبيقات وأتمتة المهام المتكررة، مع إمكانات لبناء سير عمل مدعوم بالذكاء الاصطناعي.</div>
+                <a class="tool-link" href="https://zapier.com" target="_blank" rel="noopener">zapier.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.make.com" target="_blank" rel="noopener">Make</a></div>
+                <div class="tool-desc">بناء مسارات عمل مرئية لربط التطبيقات ونقل البيانات وتنفيذ الإجراءات تلقائيًا.</div>
+                <a class="tool-link" href="https://www.make.com" target="_blank" rel="noopener">make.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://otter.ai" target="_blank" rel="noopener">Otter.ai</a></div>
+                <div class="tool-desc">تفريغ الاجتماعات والتسجيلات الصوتية إلى نصوص، وتلخيص النقاشات.</div>
+                <a class="tool-link" href="https://otter.ai" target="_blank" rel="noopener">otter.ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://fireflies.ai" target="_blank" rel="noopener">Fireflies.ai</a></div>
+                <div class="tool-desc">مساعد للاجتماعات يسجل المحادثات ويفرغها ويلخصها ويستخرج المهام.</div>
+                <a class="tool-link" href="https://fireflies.ai" target="_blank" rel="noopener">fireflies.ai</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ القسم السابع: تسويق وأعمال ============ -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-icon">📈</span>
+            <h2>سابعًا: التسويق والأعمال وتحليل البيانات</h2>
+        </div>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://www.jasper.ai" target="_blank" rel="noopener">Jasper</a></div>
+                <div class="tool-desc">إنشاء محتوى تسويقي وإعلاني، وتطوير نصوص متوافقة مع أسلوب العلامة التجارية.</div>
+                <a class="tool-link" href="https://www.jasper.ai" target="_blank" rel="noopener">jasper.ai</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://surferseo.com" target="_blank" rel="noopener">Surfer</a></div>
+                <div class="tool-desc">تحليل المحتوى وتحسين صفحات المواقع لمحركات البحث، مع اقتراحات للكلمات المفتاحية.</div>
+                <a class="tool-link" href="https://surferseo.com" target="_blank" rel="noopener">surferseo.com</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-name"><a href="https://powerbi.microsoft.com" target="_blank" rel="noopener">Microsoft Power BI</a></div>
+                <div class="tool-desc">تحليل البيانات وإنشاء لوحات معلومات ورسوم بيانية وتقارير للأعمال والمشروعات الهندسية.</div>
+                <a class="tool-link" href="https://powerbi.microsoft.com" target="_blank" rel="noopener">powerbi.microsoft.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ قسم النصيحة ============ -->
+    <div class="section tip-section">
+        <div class="section-header">
+            <span class="section-icon">💡</span>
+            <h2>أنصحك تبدأ بأي مواقع؟</h2>
+        </div>
+
+        <table class="tip-table">
+            <thead>
+                <tr>
+                    <th>هدفك</th>
+                    <th>ابدأ بهذه المواقع</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>تعلّم الهولندية والفرنسية</td>
+                    <td>ChatGPT، DeepL، Quizlet</td>
+                </tr>
+                <tr>
+                    <td>الدراسة والجامعة وملفات PDF</td>
+                    <td>NotebookLM، ChatGPT، Claude</td>
+                </tr>
+                <tr>
+                    <td>البحث عن معلومات بمصادر</td>
+                    <td>Perplexity، Gemini</td>
+                </tr>
+                <tr>
+                    <td>إعداد CV والتقديم على الوظائف</td>
+                    <td>ChatGPT، Grammarly</td>
+                </tr>
+                <tr>
+                    <td>الهندسة الميكانيكية وHVAC</td>
+                    <td>ChatGPT، Claude، Power BI</td>
+                </tr>
+                <tr>
+                    <td>إنشاء عروض تقديمية</td>
+                    <td>Gamma، Canva، Napkin AI</td>
+                </tr>
+                <tr>
+                    <td>تصميم الصور</td>
+                    <td>Leonardo AI، Ideogram، Adobe Firefly</td>
+                </tr>
+                <tr>
+                    <td>إنشاء فيديوهات</td>
+                    <td>Runway، HeyGen، CapCut</td>
+                </tr>
+                <tr>
+                    <td>تعلّم البرمجة وإنشاء مواقع</td>
+                    <td>Cursor، Replit، Lovable</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="note-box">
+            <strong>⚠️ ملاحظة مهمة:</strong> وجود خطة مجانية يختلف من موقع لآخر، وقد تكون بعض المميزات محدودة أو مدفوعة. راجع الموقع الرسمي قبل الاشتراك، ولا ترفع مستندات شخصية أو إقامة أو بيانات مالية إلى أي خدمة إلا بعد مراجعة إعدادات الخصوصية.
+        </div>
+    </div>
+
+    <footer>
+        <p>🤖 50 موقع ذكاء اصطناعي مع الروابط والنبذة — تم التحقق من الروابط من المصادر الرسمية</p>
+        <p style="margin-top: 8px; font-size: 0.85em;">آخر تحديث: 2026</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
